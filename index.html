@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="weather-app">
+      <div class="overlay">
+        <div class="w-50 mx-auto mt-5">
+          <div class="error text-danger my-3"></div>
+
+          <div>
+            <div class="form-group mb-3 d-flex gap-2">
+              <input
+                class="form-control"
+                type="text"
+                id="input-city"
+                placeholder="Search..."
+              />
+              <button class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+
+          <div class="info">
+            <div class="date p-3 border mb-3">Date : <span> </span></div>
+            <div class="location p-3 border my-3">
+              location :
+              <span class="city"></span> ,
+              <span class="country"></span>
+            </div>
+            <div class="temp p-2 border mb-3">temp : <span></span></div>
+            <div class="temp-max p-2 border mb-3">temp max : <span></span></div>
+            <div class="temp-min p-2 border mb-3">temp Min : <span></span></div>
+            <div class="wind-deg p-2 border mb-3">wind deg : <span></span></div>
+            <div class="wind-speed p-2 border mb-3">
+              wind Speed : <span></span>
+            </div>
+            <div class="humidity p-2 border mb-3">humidity : <span></span></div>
+            <div class="description p-2 border mb-3">
+              description : <span> </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- start js Files -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/mian.js"></script>
+  </body>
+</html>
